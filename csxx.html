@@ -20,8 +20,10 @@
       height: 100%;
     }
     canvas {
-      width: 80%; /* Set canvas width to 80% of the original size */
-      height: 80%; /* Set canvas height to 80% of the original size */
+      max-width: 80%; /* Set canvas maximum width to 80% of the viewport */
+      max-height: 80vh; /* Set canvas maximum height to 80% of the viewport height */
+      width: 100%; /* Make sure the canvas takes full width of its container */
+      height: auto; /* Let the height scale automatically to maintain aspect ratio */
     }
   </style>
 </HEAD>
